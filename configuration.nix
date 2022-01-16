@@ -9,10 +9,7 @@
 
   imports =
     [
-      ./hardware-configuration.nix
-      ./hosts/freyja.nix
       ./modules/default.nix
-      ./profiles/laptop.nix
       ./packages.nix
       ./users.nix
     ];
