@@ -16,12 +16,17 @@ From filesystem:
 nixos-rebuild switch --flake .#freyja
 ```
 
-You could also copy the configations to `/etc/nixos`, in which case:
+You could also reference this project with your own
 ```
-nixos-rebuild switch
+{
+  inputs = {
+    baseFlake.url = "github:lihram/nixos-flake";
+  };
+  outputs = { self, baseFlake }: {
+    nixosConfigurations.freyja = baseFlake.nixosConfigurations.freyja;
+  };
+}
 ```
-
-is enough.
 
 The `#freyja` syntax means we're choosing the `freyja` configuration in the flake.
 `nix flake show` should give you a quick overview of which profiles are available.
