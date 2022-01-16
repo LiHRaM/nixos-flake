@@ -4,7 +4,12 @@
 	home.homeDirectory = "/home/lihram";
 
 	home.stateVersion = "22.05";
+	
 	programs.home-manager.enable = true;
+	programs.neovim.enable = true;
+	programs.neovim.viAlias = true;
+	programs.neovim.vimAlias = true;
+
 	dconf.settings = {
 		"apps/light-locker" = {
 			idle-hint = false;

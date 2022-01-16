@@ -12,6 +12,7 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+	  ./profiles/laptop.nix
 	  ./hosts/freyja.nix
 	  ./hardware/freyja.nix
           inputs.home-manager.nixosModules.home-manager
