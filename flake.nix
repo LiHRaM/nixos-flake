@@ -24,15 +24,14 @@
     nixosConfigurations = {
       freyja = nixpkgs.lib.nixosSystem {
         inherit system;
-	specialArgs = { inherit pkgs; };
+	specialArgs = { inherit inputs pkgs; };
         modules = [
           ./configuration.nix
           ./profiles/laptop.nix
           ./hosts/freyja.nix
           ./hardware/freyja.nix
           ./packages.nix
-          home-manager.nixosModules.home-manager
-          {
+          home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.lihram = import ./homes/lihram.nix;
