@@ -17,7 +17,7 @@
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
-      overlays = [ neovim-lihram.overlay ];
+      overlays = [ neovim-lihram.overlay.${system} ];
     };
   in
   {
