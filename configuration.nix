@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, neovim-lihram, ... }:
 {
   nix = {
     package = pkgs.nixFlakes;
@@ -10,7 +10,6 @@
   imports =
     [
       ./modules/default.nix
-      ./packages.nix
       ./users.nix
       ./fonts.nix
     ];
