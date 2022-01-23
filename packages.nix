@@ -10,6 +10,7 @@
     fzf
     fd
     neovim
-    firefox
+    nushell
+    starship
   ];
 }
