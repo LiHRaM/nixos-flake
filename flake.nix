@@ -24,7 +24,7 @@
     nixosConfigurations = {
       freyja = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit pkgs; };
+	specialArgs = { inherit pkgs; };
         modules = [
           ./configuration.nix
           ./profiles/laptop.nix
