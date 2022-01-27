@@ -8,5 +8,7 @@
     neovim-lihram
     nushell
     starship
+    gitoxide
+    sd
   ];
 }
