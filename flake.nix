@@ -31,7 +31,6 @@
           ./hosts/freyja.nix
           ./hardware/freyja.nix
           ./packages.nix
-          ./modules/kubernetes-dev.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
