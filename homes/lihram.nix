@@ -15,12 +15,6 @@
     gtk.theme.name = "Adwaita-dark";
 
     dconf.settings = {
-        "org/gnome/desktop/interface" = {
-            document-font-name = "sans 10";
-            font-name = "sans 10";
-            monospace-font-name = "monospace 10";
-        };
-
         "org/gnome/desktop/peripherals/mouse" = {
             natural-scroll = false;
         };
