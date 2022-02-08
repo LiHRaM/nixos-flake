@@ -1,7 +1,6 @@
 { ... }:
 {
   environment.variables = {
-    LANG = "en_DK";
     EDITOR = "nvim";
   };
 
